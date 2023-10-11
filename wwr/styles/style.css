@@ -12,6 +12,8 @@ h1{
 #background {
     height: 725px;
     background-color:#396E94;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .logo {
     width: 80px
@@ -77,6 +79,7 @@ nav a:hover{
     padding: 35px;
     font-size: 20px;
     line-height: 1.5em;
+    margin-top: 100px;
     
 }
 footer{
@@ -127,13 +130,18 @@ h4{
 h2 {
     margin: 0;
 }
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card, .camping-card, .rapids-card, .mounatins{
     margin: 200px 0;
 }
+.mounatins{
+    padding: 5px 0;
+}
+
 .card-img {
-    border: 10px solid #d9c2a3;
+    border: 10px solid
 }
 main section img {
     box-sizing: border-box;
 }
+
 /*test*/
