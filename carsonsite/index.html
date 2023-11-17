@@ -27,7 +27,7 @@
         </header>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/home 1.jpg" alt="Front Image of People Gaming">
+                <img id="hero-img" src="images/home1.jpg" alt="Front Image of People Gaming">
             </div>
             <section id="hero-msg">
                 <h1 class ="home-title">Carson's Custom PCs</h1>
@@ -40,15 +40,17 @@
             <section class="missionstatement">
                 <h2>Our Mission</h2>
                 <p>At Carsons’s Custom PCs, we do not just build amazing custom computers, we design and plan every detail to ensure you have an amazing gaming experience. If you play games, edit photos or videos, or another highly demanding task you understand the importance of an always functioning high performance machine. You deserve the best gaming rig no matter your needs and we can provide that experience. </p>
-            </section>
+            </section> 
 
             <!--<section class="mission-picture">
                 <img class ="mission-picture" src="images/home 2.jpg" alt="ram picture">
                 <h2>Rivers</h2>
             </section> -->
+            
             <div id="mission-img">
-                <img id="mission-picture" src="images/home 2.jpg" alt="Picture of Ram">
+                <img id="mission-picture" src="images/home2.jpg" alt="Picture of Ram">
             </div>
+            
 
             <!--Our Team is Here to Help Section-->
             <section class="ourhelp">
@@ -56,9 +58,10 @@
                 <p>Our team will work individually with you to carefully explain how we can get to the end goal at the lowest price. We educate our clients on every decision to ensure that they are happy with their PC for the long term and have a path forward in case of issues. </p>
             </section>
             <div id="our-help-img">
-                <img id="our-help-pic" src="images/home 3.jpg" alt="Picture of High End Gaming Setup">
-            </div>
+                <img id="our-help-pic" src="images/home3.jpg" alt="Picture of High End Gaming Setup">
+            </div> 
 
+            
 
             <!--Knowledge and Passion Section-->
             <section class="Knowledge">
@@ -75,32 +78,31 @@
             <!--Trust Us Section-->
             <section class="trust">
                 <h2>Don't Just Trust Us</h2>
-                <p>We are committed to providing our customers with outstanding gaming experiences because we believe that your PC should not hold you back. We are always here to help with any issues from hardware to software now and in the future.  </p>
+                <p>We are committed to providing our customers with outstanding gaming experiences because we believe that your PC should not hold you back. We are always here to help with any issues from hardware to software now and in the future. Fill out the fields below to get in contact about buidling your PC! </p>
             </section>
-            
-            
-            <div id="order"></div>
-            <h2>Send us a message to start building your computer! </h2>
+
             <form action="/my-handling-form-page" method="post">
                 <ul>
-                <li>
+                  <li>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
+                    <input type="text" id="name" name="user_name">
+                  </li>
+                  <li>
                     <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" />
-                </li>
-                <li>
+                    <input type="email" id="mail" name="user_email">
+                  </li>
+                  <li>
                     <label for="msg">Message:</label>
                     <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
+                  </li>
+                  <li class="button">
                     <button type="submit">Send your message</button>
-                </li>
+                  </li>
                 </ul>
-            </form>
+              </form>
+    
         </main>
+    
         <footer>
             <p>Carson's Custom PCs &copy; 2023 - Carson Meikle</p>
             <p><a href="site-plan.html">Site Plan</a></p>
@@ -118,5 +120,24 @@
             </div>
         </footer>
     </div>
+
+    <div id="feedback"></div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
