@@ -542,7 +542,7 @@ body {
       margin-top: 0;
   }
   #hero-msg h4 {
-      display: none;
+    margin-top: 0;
   }
   .home-title {
       font-size: 25px;
@@ -577,7 +577,7 @@ body {
       margin-top: 0;
   }
   #custom-hero-msg h4 {
-      display: none;
+      margin-top: 0;
   }
   .custom-home-title {
       font-size: 25px;
