@@ -28,7 +28,6 @@ nav a:hover{
 .logo {
     width: 100px;
     margin-right: 20px;
-    
 }
 
 #logo_link {
@@ -51,10 +50,6 @@ nav a {
     font-size: 22px;
     padding: 50px;
 }
-
-
-
-
 
 /*Footer*/
 
@@ -90,10 +85,6 @@ footer a:hover{
 footer .social img {
     padding-top: 15px;
 }
-
-
-
-
 
 /*Data and top hero image and text*/
 
@@ -153,10 +144,6 @@ body {
     align-self: center; 
 }
 
-
-
-
-
 /*Main Page Content*/
 
 .missionstatement {
@@ -166,7 +153,6 @@ body {
     padding: 10px;
     text-align: center;
     font-size: 1.8em;
-    
   }
 
   #mission-img {
@@ -175,8 +161,6 @@ body {
     margin: 20px 0;
     width: 100%;
 }
-
-
 
 .ourhelp {
     margin: 200px 100px;
@@ -194,10 +178,16 @@ body {
     z-index: -1;
 } 
 
-.Knowledge {
+  #knowquality{
+  grid-row: 3/4;
+  grid-column: 1/12;
+  border: 2px solid rgb(60, 145, 162);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr)
+}
+  .Knowledge {
     margin: 100px 20px;
     grid-column: 1/5;
-    grid-row: 3/4;  
     padding: 10px;
     text-align: center;
     font-size: 1.8em;
@@ -206,7 +196,6 @@ body {
   .quality {
     margin: 100px 20px;
     grid-column: 6/12;
-    grid-row: 3/4;  
     padding: 10px;
     text-align: center;
     font-size: 1.8em;
@@ -220,11 +209,6 @@ body {
     text-align: center;
     font-size: 1.8em;
   }
-
-
-
-
-
 
 
   /*Main Page Form*/
@@ -519,6 +503,72 @@ body {
 
 
 
+/*Contact and Support Page*/
+
+.committment{
+  margin: 100px 20px;
+  grid-column: 3/9;
+  grid-row: 1/2;
+  padding: 25px;
+  text-align: center;
+  font-size: 2.3em;
+  border: 2px solid rgb(72, 152, 213)
+}
+
+
+.contact_heading {
+  margin: 100px 20px;
+  grid-column: 1/6;
+  grid-row: 2/3;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#support2 {
+  grid-column: 7/9;
+  grid-row: 2/3;
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+.faq-outline {
+  grid-column: 3/9;
+  padding: 15px;
+  border: 2px solid #fff; 
+}
+.FAQHeader{
+  margin: 50px 20px;
+  grid-column: 3/9;
+  grid-row: 3/4;
+  padding: 25px;
+  text-align: center;
+  font-size: 2.3em;
+  color: rgb(10, 110, 242);
+  text-decoration: underline;
+}
+
+.FAQ{
+  margin: 0 20px 50px;
+  grid-column: 3/9;
+  grid-row: 4/5;
+  padding: 25px;
+  text-align: center;
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+}
+
+.form_heading{
+  margin: 0 20px;
+  grid-column: 3/9;
+  grid-row: 4/5;
+  padding: 25px;
+  text-align: center;
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+}
+
 
 /*Small Screen Support*/
 
@@ -592,6 +642,13 @@ body {
   .G2500PC, .G2000PC, .G1500, .G1000, .G800 { 
     text-align: center;
   }
+
+  #support2 { 
+    margin: 50px auto;
+    width: 40%;
+    text-align: center;
+}
+
   footer {
       flex-direction: column; 
       align-items: center; 
